@@ -9,13 +9,26 @@
 /* Begin PBXBuildFile section */
 		E9F1E47629AE8F200033E29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E47529AE8F200033E29C /* AppDelegate.swift */; };
 		E9F1E47829AE8F200033E29C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E47729AE8F200033E29C /* SceneDelegate.swift */; };
-		E9F1E47A29AE8F200033E29C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E47929AE8F200033E29C /* ViewController.swift */; };
 		E9F1E47D29AE8F200033E29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F1E47B29AE8F200033E29C /* Main.storyboard */; };
 		E9F1E47F29AE8F210033E29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F1E47E29AE8F210033E29C /* Assets.xcassets */; };
 		E9F1E48229AE8F210033E29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F1E48029AE8F210033E29C /* LaunchScreen.storyboard */; };
 		E9F1E48D29AE8F210033E29C /* trustWalletChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E48C29AE8F210033E29C /* trustWalletChallengeTests.swift */; };
 		E9F1E49729AE8F210033E29C /* trustWalletChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E49629AE8F210033E29C /* trustWalletChallengeUITests.swift */; };
 		E9F1E49929AE8F210033E29C /* trustWalletChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E49829AE8F210033E29C /* trustWalletChallengeUITestsLaunchTests.swift */; };
+		E9F1E4A629AE909B0033E29C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4A529AE909B0033E29C /* AppCoordinator.swift */; };
+		E9F1E4AA29AE90F70033E29C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4A929AE90F70033E29C /* HomeCoordinator.swift */; };
+		E9F1E4AF29AE91810033E29C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4AE29AE91810033E29C /* HomeViewModel.swift */; };
+		E9F1E4B229AE91DB0033E29C /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4B129AE91DB0033E29C /* CoordinatorProtocol.swift */; };
+		E9F1E4B429AE925E0033E29C /* ViewControllableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4B329AE925E0033E29C /* ViewControllableProtocol.swift */; };
+		E9F1E4B729AE92980033E29C /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4B629AE92980033E29C /* CustomHostingController.swift */; };
+		E9F1E4B929AE99DB0033E29C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4B829AE99DB0033E29C /* HomeView.swift */; };
+		E9F1E4BC29AEAF8B0033E29C /* TransactionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4BB29AEAF8B0033E29C /* TransactionsRepository.swift */; };
+		E9F1E4BE29AF237D0033E29C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4BD29AF237D0033E29C /* ButtonView.swift */; };
+		E9F1E4C029AF26F20033E29C /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4BF29AF26F20033E29C /* View+Extension.swift */; };
+		E9F1E4C429AF278A0033E29C /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4C329AF278A0033E29C /* TextFieldStyle.swift */; };
+		E9F1E4C629AFD3380033E29C /* SubtitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4C529AFD3380033E29C /* SubtitleStyle.swift */; };
+		E9F1E4C829B04E4E0033E29C /* TransactionsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4C729B04E4E0033E29C /* TransactionsRepositoryTests.swift */; };
+		E9F1E4CA29B051560033E29C /* TransactionalStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4C929B051560033E29C /* TransactionalStoreProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +52,6 @@
 		E9F1E47229AE8F200033E29C /* trustWalletChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trustWalletChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F1E47529AE8F200033E29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F1E47729AE8F200033E29C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9F1E47929AE8F200033E29C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9F1E47C29AE8F200033E29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F1E47E29AE8F210033E29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F1E48129AE8F210033E29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,20 @@
 		E9F1E49229AE8F210033E29C /* trustWalletChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trustWalletChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F1E49629AE8F210033E29C /* trustWalletChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trustWalletChallengeUITests.swift; sourceTree = "<group>"; };
 		E9F1E49829AE8F210033E29C /* trustWalletChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trustWalletChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9F1E4A529AE909B0033E29C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E9F1E4A929AE90F70033E29C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E9F1E4AE29AE91810033E29C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E9F1E4B129AE91DB0033E29C /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		E9F1E4B329AE925E0033E29C /* ViewControllableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllableProtocol.swift; sourceTree = "<group>"; };
+		E9F1E4B629AE92980033E29C /* CustomHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHostingController.swift; sourceTree = "<group>"; };
+		E9F1E4B829AE99DB0033E29C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E9F1E4BB29AEAF8B0033E29C /* TransactionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRepository.swift; sourceTree = "<group>"; };
+		E9F1E4BD29AF237D0033E29C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		E9F1E4BF29AF26F20033E29C /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		E9F1E4C329AF278A0033E29C /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
+		E9F1E4C529AFD3380033E29C /* SubtitleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleStyle.swift; sourceTree = "<group>"; };
+		E9F1E4C729B04E4E0033E29C /* TransactionsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRepositoryTests.swift; sourceTree = "<group>"; };
+		E9F1E4C929B051560033E29C /* TransactionalStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionalStoreProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +125,10 @@
 		E9F1E47429AE8F200033E29C /* trustWalletChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				E9F1E4A829AE90DE0033E29C /* Home */,
+				E9F1E4A729AE90D60033E29C /* Core */,
 				E9F1E47529AE8F200033E29C /* AppDelegate.swift */,
 				E9F1E47729AE8F200033E29C /* SceneDelegate.swift */,
-				E9F1E47929AE8F200033E29C /* ViewController.swift */,
 				E9F1E47B29AE8F200033E29C /* Main.storyboard */,
 				E9F1E47E29AE8F210033E29C /* Assets.xcassets */,
 				E9F1E48029AE8F210033E29C /* LaunchScreen.storyboard */,
@@ -114,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F1E48C29AE8F210033E29C /* trustWalletChallengeTests.swift */,
+				E9F1E4C729B04E4E0033E29C /* TransactionsRepositoryTests.swift */,
 			);
 			path = trustWalletChallengeTests;
 			sourceTree = "<group>";
@@ -125,6 +153,97 @@
 				E9F1E49829AE8F210033E29C /* trustWalletChallengeUITestsLaunchTests.swift */,
 			);
 			path = trustWalletChallengeUITests;
+			sourceTree = "<group>";
+		};
+		E9F1E4A729AE90D60033E29C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4B029AE91D00033E29C /* Coordinators */,
+				E9F1E4C129AF27450033E29C /* CustomViewModifiers */,
+				E9F1E4C229AF275A0033E29C /* Extensions */,
+				E9F1E4B529AE92660033E29C /* Navigation */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E9F1E4A829AE90DE0033E29C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4AB29AE915B0033E29C /* Coordinators */,
+				E9F1E4BA29AEAF720033E29C /* Repository */,
+				E9F1E4AC29AE91650033E29C /* ViewModels */,
+				E9F1E4AD29AE916C0033E29C /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E9F1E4AB29AE915B0033E29C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4A929AE90F70033E29C /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E9F1E4AC29AE91650033E29C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4AE29AE91810033E29C /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E9F1E4AD29AE916C0033E29C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4B829AE99DB0033E29C /* HomeView.swift */,
+				E9F1E4BD29AF237D0033E29C /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9F1E4B029AE91D00033E29C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4A529AE909B0033E29C /* AppCoordinator.swift */,
+				E9F1E4B129AE91DB0033E29C /* CoordinatorProtocol.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E9F1E4B529AE92660033E29C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4B629AE92980033E29C /* CustomHostingController.swift */,
+				E9F1E4B329AE925E0033E29C /* ViewControllableProtocol.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		E9F1E4BA29AEAF720033E29C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4BB29AEAF8B0033E29C /* TransactionsRepository.swift */,
+				E9F1E4C929B051560033E29C /* TransactionalStoreProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E9F1E4C129AF27450033E29C /* CustomViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4C329AF278A0033E29C /* TextFieldStyle.swift */,
+				E9F1E4C529AFD3380033E29C /* SubtitleStyle.swift */,
+			);
+			path = CustomViewModifiers;
+			sourceTree = "<group>";
+		};
+		E9F1E4C229AF275A0033E29C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1E4BF29AF26F20033E29C /* View+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +377,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F1E47A29AE8F200033E29C /* ViewController.swift in Sources */,
+				E9F1E4B729AE92980033E29C /* CustomHostingController.swift in Sources */,
+				E9F1E4B229AE91DB0033E29C /* CoordinatorProtocol.swift in Sources */,
+				E9F1E4BE29AF237D0033E29C /* ButtonView.swift in Sources */,
+				E9F1E4A629AE909B0033E29C /* AppCoordinator.swift in Sources */,
+				E9F1E4CA29B051560033E29C /* TransactionalStoreProtocol.swift in Sources */,
+				E9F1E4C629AFD3380033E29C /* SubtitleStyle.swift in Sources */,
+				E9F1E4B929AE99DB0033E29C /* HomeView.swift in Sources */,
+				E9F1E4AF29AE91810033E29C /* HomeViewModel.swift in Sources */,
+				E9F1E4AA29AE90F70033E29C /* HomeCoordinator.swift in Sources */,
 				E9F1E47629AE8F200033E29C /* AppDelegate.swift in Sources */,
 				E9F1E47829AE8F200033E29C /* SceneDelegate.swift in Sources */,
+				E9F1E4C029AF26F20033E29C /* View+Extension.swift in Sources */,
+				E9F1E4B429AE925E0033E29C /* ViewControllableProtocol.swift in Sources */,
+				E9F1E4BC29AEAF8B0033E29C /* TransactionsRepository.swift in Sources */,
+				E9F1E4C429AF278A0033E29C /* TextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F1E4C829B04E4E0033E29C /* TransactionsRepositoryTests.swift in Sources */,
 				E9F1E48D29AE8F210033E29C /* trustWalletChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
