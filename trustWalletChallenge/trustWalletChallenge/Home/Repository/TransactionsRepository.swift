@@ -10,7 +10,7 @@ import Foundation
 final class TransactionsRepository: TransactionalStoreProtocol {
 
     enum Command {
-        case set(key: String, value: String)
+        case set(key: String, value: String, isNewKey: Bool)
         case delete(key: String)
     }
 
@@ -19,8 +19,8 @@ final class TransactionsRepository: TransactionalStoreProtocol {
     private(set) var dictionary: [String: String] = [:]
 
     // temporaryDictionary will be used when transactions are being processed. It should always be updated with the latest command executed.
-    private var temporaryDictionary: [String: String] = [:]
-    private var queues: [[Command]] = []
+    private(set) var temporaryDictionary: [String: String] = [:]
+    private(set) var queues: [[Command]] = []
 
     // MARK: Init
 
@@ -38,10 +38,14 @@ extension TransactionsRepository {
         if transactionsCounter == 0 {
             dictionary[key] = value
         } else {
+            var isNewKey = false
+            if temporaryDictionary[key] == nil {
+                isNewKey = true
+            }
             temporaryDictionary[key] = value
             // Add command to the queue
             guard var queue = queues.last else { return }
-            queue.append(.set(key: key, value: value))
+            queue.append(.set(key: key, value: value, isNewKey: isNewKey))
             queues.removeLast()
             queues.append(queue)
         }
@@ -84,7 +88,7 @@ extension TransactionsRepository {
         // Update temporaryDictionary with queued commands
         for command in queue {
             switch command {
-            case .set(let key, let value):
+            case .set(let key, let value, _):
                 temporaryDictionary[key] = value
             case .delete(let key):
                 temporaryDictionary.removeValue(forKey: key)
@@ -100,7 +104,7 @@ extension TransactionsRepository {
     }
 
     func rollback() {
-        queues.removeLast()
+        let lastQueue = queues.removeLast()
         guard let queue = queues.last else {
             // If we are doing roll back of the only existing transaction we just remove all elements from
             // temporaryDictionary and start using again the original dictionary
@@ -110,12 +114,26 @@ extension TransactionsRepository {
         // Update temporaryDictionary with queued commands of previous transaction
         for command in queue {
             switch command {
-            case .set(let key, let value):
+            case .set(let key, let value, _):
                 temporaryDictionary[key] = value
             case .delete(let key):
                 temporaryDictionary.removeValue(forKey: key)
             }
         }
+
+        // Remove NEW keys that were added to the temporaryDictionary in the transaction that was reverted
+        var keysToRemove: [String] = []
+        for command in lastQueue {
+            switch command {
+            case .set(let key, _, let isNewKey):
+                if isNewKey {
+                    keysToRemove.append(key)
+                }
+            default:
+                break
+            }
+        }
+        keysToRemove.forEach { temporaryDictionary.removeValue(forKey: $0) }
     }
 }
 
