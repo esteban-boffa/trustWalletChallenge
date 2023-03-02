@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class TransactionsRepository {
+final class TransactionsRepository: TransactionalStoreProtocol {
 
     enum Command {
         case set(key: String, value: String)
@@ -16,7 +16,7 @@ final class TransactionsRepository {
 
     // MARK: Private Properties
 
-    private var dictionary: [String: String] = [:]
+    private(set) var dictionary: [String: String] = [:]
 
     // temporaryDictionary will be used when transactions are being processed. It should always be updated with the latest command executed.
     private var temporaryDictionary: [String: String] = [:]
