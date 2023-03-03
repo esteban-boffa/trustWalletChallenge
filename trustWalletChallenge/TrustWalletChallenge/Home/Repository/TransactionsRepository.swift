@@ -38,7 +38,7 @@ extension TransactionsRepository {
         if transactionsCounter == 0 {
             dictionary[key] = value
         } else {
-            var isNewKey = temporaryDictionary[key] == nil
+            let isNewKey = temporaryDictionary[key] == nil
             temporaryDictionary[key] = value
             // Add command to the queue
             guard var queue = queues.last else { return }

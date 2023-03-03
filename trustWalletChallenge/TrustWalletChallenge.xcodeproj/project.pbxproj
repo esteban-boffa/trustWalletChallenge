@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E935C71529B18D0500469611 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E935C71429B18D0500469611 /* HomeViewModelTests.swift */; };
+		E935C71929B1B29000469611 /* DiskTransactionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E935C71829B1B29000469611 /* DiskTransactionsRepository.swift */; };
 		E966A28F29B07B2100AAED33 /* TransactionsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4C729B04E4E0033E29C /* TransactionsRepositoryTests.swift */; };
 		E9F1E47629AE8F200033E29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E47529AE8F200033E29C /* AppDelegate.swift */; };
 		E9F1E47829AE8F200033E29C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E47729AE8F200033E29C /* SceneDelegate.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		E935C71429B18D0500469611 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		E935C71829B1B29000469611 /* DiskTransactionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskTransactionsRepository.swift; sourceTree = "<group>"; };
 		E9F1E47229AE8F200033E29C /* TrustWalletChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrustWalletChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F1E47529AE8F200033E29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F1E47729AE8F200033E29C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				E9F1E4BB29AEAF8B0033E29C /* TransactionsRepository.swift */,
 				E9F1E4C929B051560033E29C /* TransactionalStoreProtocol.swift */,
+				E935C71829B1B29000469611 /* DiskTransactionsRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				E9F1E4C029AF26F20033E29C /* View+Extension.swift in Sources */,
 				E9F1E4B429AE925E0033E29C /* ViewControllableProtocol.swift in Sources */,
 				E9F1E4BC29AEAF8B0033E29C /* TransactionsRepository.swift in Sources */,
+				E935C71929B1B29000469611 /* DiskTransactionsRepository.swift in Sources */,
 				E9F1E4C429AF278A0033E29C /* TextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
