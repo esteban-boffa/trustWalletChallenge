@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E935C71529B18D0500469611 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E935C71429B18D0500469611 /* HomeViewModelTests.swift */; };
 		E966A28F29B07B2100AAED33 /* TransactionsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E4C729B04E4E0033E29C /* TransactionsRepositoryTests.swift */; };
 		E9F1E47629AE8F200033E29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E47529AE8F200033E29C /* AppDelegate.swift */; };
 		E9F1E47829AE8F200033E29C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1E47729AE8F200033E29C /* SceneDelegate.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E935C71429B18D0500469611 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		E9F1E47229AE8F200033E29C /* TrustWalletChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrustWalletChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F1E47529AE8F200033E29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F1E47729AE8F200033E29C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				E9F1E48C29AE8F210033E29C /* TrustWalletChallengeTests.swift */,
 				E9F1E4C729B04E4E0033E29C /* TransactionsRepositoryTests.swift */,
+				E935C71429B18D0500469611 /* HomeViewModelTests.swift */,
 			);
 			path = TrustWalletChallengeTests;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			files = (
 				E966A28F29B07B2100AAED33 /* TransactionsRepositoryTests.swift in Sources */,
 				E9F1E48D29AE8F210033E29C /* TrustWalletChallengeTests.swift in Sources */,
+				E935C71529B18D0500469611 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

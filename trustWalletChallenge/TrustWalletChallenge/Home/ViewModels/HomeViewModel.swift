@@ -46,7 +46,7 @@ final class HomeViewModel: ObservableObject {
     @Published private(set) var getValue = ""
     @Published private(set) var countValue = 0
     @Published private(set) var transactionsCounter = 0
-    private let repository: TransactionsRepository
+    private let repository: TransactionalStoreProtocol
 
     // MARK: Properties
 
@@ -56,7 +56,7 @@ final class HomeViewModel: ObservableObject {
 
     // MARK: Init
 
-    init(repository: TransactionsRepository = TransactionsRepository()) {
+    init(repository: TransactionalStoreProtocol = TransactionsRepository()) {
         self.repository = repository
     }
 }
