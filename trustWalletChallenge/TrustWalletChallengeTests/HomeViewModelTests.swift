@@ -112,6 +112,18 @@ final class HomeViewModelTests: XCTestCase {
         XCTAssertEqual(mockedTransactionsRepository.rollbackCalledCount, 1)
         XCTAssertEqual(homeViewModel.transactionsCounter, 0)
     }
+
+    @MainActor
+    func test_resetValues_shouldSetEmptyStringToGetValueAndZeroToCountValue() {
+        homeViewModel.didTapGetButton(with: "test")
+        homeViewModel.didTapCountButton(for: "123")
+        XCTAssertEqual(homeViewModel.getValue, "value")
+        XCTAssertEqual(homeViewModel.countValue, 3)
+
+        homeViewModel.resetValues()
+        XCTAssertEqual(homeViewModel.getValue, "")
+        XCTAssertEqual(homeViewModel.countValue, 0)
+    }
 }
 
 final class MockedTransactionsRepository: TransactionalStoreProtocol {
